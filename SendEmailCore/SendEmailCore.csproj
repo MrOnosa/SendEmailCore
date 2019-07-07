@@ -3,6 +3,20 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>sendemailcore</ToolCommandName>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/MrOnosa/SendEmailCore</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MrOnosa/SendEmailCore.git</RepositoryUrl>
+    <RepositoryType>github</RepositoryType>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Tyler Palesano</Authors>
+    <Description>SendEmailCore is a simple command line SMTP email client built in dotnet core. 
+    * This command requires two thing: 1. A from address. 2. A message. The message can be provided with either the -m command or piped in via STDIN.
+    * Usage examples can be found at https://github.com/MrOnosa/SendEmailCore.
+    </Description>
   </PropertyGroup>
 
   <ItemGroup>
